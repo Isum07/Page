@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your concise and relevant description goes here.">
+
+    <title>Purchase Bill</title>
+    <link rel="stylesheet" href="../Styles/billStyles.css">
+</head>
+
+<body>
+    <header>
+            <div id="contact">☎:0777 233 233 / 0112 811 811
+            <div id="track">🚛Track</div> <div id="login">🔒Register</div>
+            <button id="view-cart" onclick="scrollToCart()">🛒View Cart</button>
+    </header>
+    <ul class="topnav">
+        
+        <li><a class="active" href="#home">Home</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="./doctor.html">Doctor</a></li>
+            <li><a href="./pharmacy.html">Pharmacy</a></li>
+                <li><a href="./video gallery.html">Video gallery</a></li>
+                    <li><a href="./video gallery.html">Consult and Reservation</a></li>
+    
+    </ul>
+    
+    
+  
+
+
+    <main>
+        <section id="bill-section">
+            <h2>Thank you for your purchase!</h2>
+            <table id="bill-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th >Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bill items will be dynamically added here -->
+                </tbody>
+            </table>
+            <p>Total Amount: LKR <span id="bill-total">0</span></p>
+        </section>
+
+        <!-- Order Details Form -->
+        <section id="order-details">
+            <h2>Order Details</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required
+                        pattern="[a-zA-Z\s]+" title="Only alphabets and spaces are allowed.">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="card">Card Number:</label>
+                    <input type="number" id="card" name="card" placeholder="Enter your 16-digit card number" required
+                        pattern="\d{16}" minlength="16" maxlength="16" title="Card number must be exactly 16 digits.">
+                </div>
+
+                <div class="form-group inline-fields">
+                    <div class="field">
+                        <label for="cvv">CVV:</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="Enter CVV" required pattern="\d{3}"
+                            maxlength="3" title="CVV must be exactly 3 digits.">
+                    </div>
+                    <div class="field">
+                        <label for="expiry-date">Expiry Date:</label>
+                        <input type="month" id="expiry-date" name="expiry-date" required>
+                    </div>
+                </div>
+
+                <button type="submit">Confirm Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div>Copyright Disclaimer<br> Patient Rights & Responsibilities<br> Data Protection Notice<br>
+            <r1> For More information:</r1><br>
+         <a href="https://www.instagram.com/" target="_blank"><img src="../img2/insta.jpg"width="30" height="30" alt="instergram"> </a>
+             <a href="https://www.youtube.com/" target="_blank"><img src="../img2/youtubr.jpg"width="30" height="30"alt="youtube"></a>
+             <a href="https://www.instagram.com/" target="_blank"><a href="https://www.facebook.com/" target="_blank "><img src="../img2/ca3bf05cfab74677e5b73b130bd30991.jpg"width="30" height="30" alt="facebook"></a>
+                 <a href="https://lk.linkedin.com/" target="_blank"><img src="../img2/link.png"width="30" height="30" alt="lindin"></a>
+         
+         
+         
+         </div>
+            <div><nav>
+             <ul>
+                 <li><a href="./index.html">Home</a></li>
+                 <li><a href="about us.html">About us</a></li>
+                 <li><a href="./services.html">service</a></li>
+                 
+             </ul>
+         </nav></div>
+         <div> <nav>
+           <ul>
+            <li><a href="./doctor.html">Doctor</a></li>
+               <li><a href="./pharmacy.html">Pharmacy</a></li>
+               <li><a href="./video gallery.html">Video gallery</a></li>
+               
+           </ul>
+         </nav></div>
+         
+    </footer>
+
+    <script src="../JS/bill.js"></script>
+</body>
+
+</html>

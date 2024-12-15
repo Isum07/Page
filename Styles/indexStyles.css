@@ -1,0 +1,404 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+#contact{
+    display: inline;
+    padding-right: 800px;
+  }
+  #track{
+    display: inline;
+    align-items: right;
+    padding-left: auto;
+  
+  }
+  #login{
+    display: inline;
+    align-items: right;
+    padding-right:30px;
+    
+  }
+ 
+header {
+    position: relative;
+    background: #19836a;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header #view-cart {
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translateY(-50%);
+    background-color: white;
+    color: #243f69;;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header #view-cart:hover {
+    background-color: #ebfcaa;
+}
+body {
+    margin: 0;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #243f69;
+}
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.topnav li a:hover {
+    background-color: #6885b4;
+
+}
+
+
+
+
+
+main {
+    padding: 20px;
+}
+
+
+#medicine-categories {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.category {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.category h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #243f69;
+    text-transform: uppercase;
+}
+
+.category .medicine-item {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.category .medicine-item:hover {
+    transform: scale(1.05);
+}
+
+.category .medicine-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.category .medicine-item p {
+    font-size: 1.2rem; 
+    margin: 10px 0;
+    color: #333;
+}
+.category .medicine-name{
+    font-weight: bold;
+    display: block;
+}
+
+.category .medicine-price{
+    font-size: 1rem;
+    color: #525252; 
+    display: block; 
+}   
+
+
+.category .medicine-item input {
+    width: 70%;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category .medicine-item button {
+    background-color: #214A3C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.category .medicine-item button:hover {
+    background-color: #146d58;;
+}
+h1 {
+    background-color: #19836a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+#cart-section {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: "100px";
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#cart-table th {
+    background-color: #243f69;
+    color: white;
+}
+
+#cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#cart-total {
+    font-weight: bold;
+    color: #4a80ba;
+}
+
+#buy-btn {
+    background-color: #50b28f ; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease-in-out; 
+    margin-top: 10px; 
+}
+
+#buy-btn:hover {
+    background-color: #146d58; 
+}
+
+#SFav-btn{
+    background-color: #dda162 ; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease-in-out; 
+    margin-top: 10px; 
+
+}
+#SFav-btn:hover{
+    background-color:#79644c  ; 
+}
+#AFav-btn{
+    background-color: #dda162 ; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease-in-out; 
+    margin-top: 10px; 
+
+}
+#AFav-btn:hover{
+    background-color:#79644c  ; 
+}
+
+
+footer {
+    background-color: #8a8a8a;
+    padding: 0px 0px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    line-height: 20px;
+    
+}
+r1 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+p4 {
+    color: white;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li {
+    display: list-item;
+    cursor: pointer;
+
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
+    line-height: 45px;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #8a8a8a;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    #contact, #track, #login {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #contact {
+        padding-right: 0;
+    }
+
+    #track {
+        padding-left: 0;
+    }
+
+    #login {
+        padding-right: 0;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    header #view-cart {
+        position: static;
+        margin-top: 10px;
+    }
+
+    ul.topnav li {
+        float: none;
+        text-align: center;
+    }
+
+    ul.topnav li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    #contact, #track, #login {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .category {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+    }
+
+    .category .medicine-item {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .category .medicine-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    #cart-table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    footer nav ul li a {
+        font-size: medium;
+    }
+
+    #buy-btn, #SFav-btn, #AFav-btn {
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+}
+

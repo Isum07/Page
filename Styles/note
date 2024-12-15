@@ -1,0 +1,36 @@
+#login{
+        align-items: right;
+        padding-left:10px;
+      }
+      #track{
+        padding-right: 200px;
+      
+      }
+    .category .medicine-item {
+        width: 150px; 
+    }
+
+    .category .medicine-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .category .medicine-item p {
+        font-size: 1rem;
+    }
+
+    .category .medicine-item input,
+    .category .medicine-item button {
+        font-size: 0.9rem;
+        padding: 5px;
+    } 
+    ul.topnav li.right, 
+  ul.topnav li {
+    float: none;
+} 
+footer {
+    width: 820px;
+    float: none;
+}
+
+

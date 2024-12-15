@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../Favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../Favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../Favicon/site.webmanifest" />
+    <title>Loving Hands Health Pharmacy</title>
+    <link rel="stylesheet" href="../Styles/indexStyles.css">
+</head>
+
+<body>
+    <header>
+        <div class="felx-item2">
+            <select name="lanuage" id="lanuage" aria-label="language">
+                <option value="english">English</option>
+                <option value="sinhala">Sinhala</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+
+            <div id="contact">☎:0777 233 233 / 0112 811 811</div>
+                <div id="track">🚛Track</div>
+                <div id="login">🔒Register</div>
+                <button id="view-cart" onclick="scrollToCart()">🛒View Cart</button>
+    </header>
+    <ul class="topnav">
+
+        <li><a class="active" href="../">Home</a></li>
+        <li class="right"><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="./doctor.html">Doctor</a></li>
+        <li><a href="./pharmacy.html">Pharmacy</a></li>
+        <li><a href="./video gallery.html">Video gallery</a></li>
+        <li><a href="./video gallery.html">Consult and Reservation</a></li>
+        </div>
+
+    </ul>
+    <div class="logo">
+        <img src="../Images/logo 1.png">
+    </div>
+    
+<!-- Analgesics Section -->
+<div class="category">
+    <h3>Analgesics</h3>
+    <div class="medicine-item">
+        <img src="../Images/med1.avif" alt="Ibuprofen">
+
+        <p>
+            <span class="medicine-name">Ibuprofen</span><br>
+            <span class="medicine-price">LKR 3000</span>
+        </p>
+        <label for="Ibuprofen">
+        <input type="number" id="Ibuprofen-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('Ibuprofen', 3000, 'Ibuprofen-qty')">Add to Cart</button>
+    </label>
+        
+    </div>
+    <div class="medicine-item">
+        <img src="../Images/med3.webp" alt="Ibuprofen">
+        <p>
+            <span class="medicine-name">opioid</span><br>
+            <span class="medicine-price">LKR 3500</span>
+        </p>
+        <label for="opioid">
+        <input type="number" id="opioid-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('opioid', 3500, 'opioid-qty')">Add to Cart</button></label>
+    </div>
+    <div class="medicine-item">
+        <img src="../Images/med2.webp" alt="Acetaminophen">
+        <p>
+            <span class="medicine-name">Acetaminophen</span><br>
+            <span class="medicine-price">LKR 1500</span>
+        </p>
+        <label for="acetaminophen">
+        <input type="number" id="acetaminophen-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('acetaminophen', 1500, 'acetaminophen-qty')">Add to Cart</button>
+    </label>
+    </div>
+    <div class="medicine-item">
+        <img src="../Images/med4.1.webp" alt="Codeine">
+        <p>
+            <span class="medicine-name">Codeine</span><br>
+            <span class="medicine-price">LKR 2000</span>
+        </p>
+        <label for="codeine">
+        <input type="number" id="codeine-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('codeine', 2000, 'codeine-qty')">Add to Cart</button>
+    </label>
+    </div>
+    <div class="medicine-item">
+        <img src="../Images/med5.webp" alt="Oxycodone">
+        <p>
+            <span class="medicine-name">Oxycodone</span><br>
+            <span class="medicine-price">LKR 2100</span>
+        </p>
+        <label for="oxycodone">
+        <input type="number" id="oxycodone-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('oxycodone', 2100, 'oxycodone-qty')">Add to Cart</button>
+    </label>
+    </div>
+    <div class="medicine-item">
+        <img src="../Images/med6.webp" alt="Morphine">
+        <p>
+            <span class="medicine-name">Morphine</span><br>
+            <span class="medicine-price">LKR 4000</span>
+        </p>
+        <label for="morphine">
+        <input type="number" id="morphine-qty" value="1" min="1" aria-label="medicine">
+        <button onclick="addToCart('morphine', 4000, 'morphine-qty')">Add to Cart</button>
+    </label>
+    </div>
+</div>
+
+
+        <!-- Antibiotics Section -->
+        <div class="category">
+            <h3>Antibiotics</h3>
+            <div class="medicine-item">
+                <img src="../Images/med7.webp" alt="Penicillin">
+                <p>
+                    <span class="medicine-name">Penicillin</span><br>
+                    <span class="medicine-price">LKR 3500</span>
+                </p>
+                <label for="penicillin">
+                <input type="number" id="penicillin-qty" value="1" min="1" aria-label="medicine">
+                <div class="action-buttons">
+                    <button onclick="addToCart('Penicillin', 3500, 'penicillin-qty')">Add to Cart</button>
+                </label>
+
+                </div>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med8.webp" alt="Cephalosporin">
+                <p>
+                    <span class="medicine-name">Cephalosporin</span><br>
+                    <span class="medicine-price">LKR 4500</span>
+                </p>
+                <label for="cephalosporin">
+                <input type="number" id="cephalosporin-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('cephalosporin', 4500, 'cephalosporin-qty')">Add to Cart</button>
+            </label>
+
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med9.webp" alt="Tetracyclines">
+                <p>
+                    <span class="medicine-name">Tetracyclines</span><br>
+                    <span class="medicine-price">LKR 2500</span>
+                </p>
+                <label for="tetracyclines">
+                <input type="number" id="tetracyclines-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('tetracyclines', 2500, 'tetracyclines-qty')">Add to Cart</button>
+            </label>
+
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med10.webp" alt="Sulfonamide">
+                <p>
+                    <span class="medicine-name">Sulfonamide</span><br>
+                    <span class="medicine-price">LKR 1000</span>
+                </p>
+                <label for="sulfonamide">
+                <input type="number" id="sulfonamide-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('sulfonamide', 1000, 'sulfonamide-qty')">Add to Cart</button>
+            </label>
+
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med11.webp" alt="Aminoglycoside">
+                <p>
+                    <span class="medicine-name">Aminoglycoside</span><br>
+                    <span class="medicine-price">LKR 2150</span>
+                </p>
+                <label for="aminoglycoside">
+                <input type="number" id="aminoglycoside-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('aminoglycoside', 2150, 'aminoglycoside-qty')">Add to Cart</button>
+            </label>
+
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med12.webp" alt="Fluoroquinolones">
+                <p>
+                    <span class="medicine-name">Fluoroquinolones</span><br>
+                    <span class="medicine-price">LKR 4500</span>
+                </p>
+                <label for="fluoroquinolones">
+                <input type="number" id="fluoroquinolones-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('fluoroquinolones', 4500, 'fluoroquinolones-qty')">Add to Cart</button>
+            </label>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- Antidepressants Section -->
+
+        </div>
+        <div class="category">
+            <h3>Antidepressants </h3>
+            <div class="medicine-item">
+                <img src="../Images/med13.1.webp" alt="Prozac">
+                <p>
+                    <span class="medicine-name">Prozac</span><br>
+                    <span class="medicine-price">LKR:3700</span>
+                </p>
+                <label for="Prozac">
+                <input type="number" id="Prozac-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Prozac', 3700, 'Prozac-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med14.webp" alt="Venlafaxine">
+                <p>
+                    <span class="medicine-name">Venlafaxine</span><br>
+                    <span class="medicine-price">LKR 2300</span>
+                </p>
+                <label for="Venlafaxine">
+                <input type="number" id="Venlafaxine-qty" value="1" min="1"  aria-label="medicine">
+                <button onclick="addToCart('Venlafaxine', 2300, 'Venlafaxine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med15.webp" alt=" Nortriptyline">
+                <p>
+                    <span class="medicine-name"> Nortriptyline</span><br>
+                    <span class="medicine-price">LKR 2600</span>
+                </p>
+                <label for="Nortriptyline">
+                <input type="number" id="Nortriptyline-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Nortriptyline', 2600, 'Nortriptyline-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med16.webp" alt="Nardil">
+                <p>
+                    <span class="medicine-name">Nardil</span><br>
+                    <span class="medicine-price">LKR 1500</span>
+                </p>
+                <label for="Nardil">
+                <input type="number" id="Nardil-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Nardil', 1500, 'Nardil-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med17.webp" alt="Wellbutrin">
+                <p>
+                    <span class="medicine-name">Wellbutrin</span><br>
+                    <span class="medicine-price">LKR 2155</span>
+                </p>
+                <label for="Wellbutrin">
+                <input type="number" id="Wellbutrin-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Wellbutrin', 2155, 'Wellbutrin-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med18.jpg" alt="Remeron">
+                <p>
+                    <span class="medicine-name">Remeron</span><br>
+                    <span class="medicine-price">LKR 4500</span>
+                </p>
+                <label for="Remeron">
+                <input type="number" id="Remeron-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Remeron', 4550, 'Remeron-qty')">Add to Cart</button>
+            </label>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 	Antihistamines Section -->
+
+
+        <div class="category">
+            <h3>Antihistamines </h3>
+            <div class="medicine-item">
+                <img src="../Images/WEB19.webp" alt="Cetirizine">
+                <p>
+                    <span class="medicine-name">Cetirizine</span><br>
+                    <span class="medicine-price">LKR:3600</span>
+                </p>
+                <label for="Cetirizine">
+                <input type="number" id="Cetirizine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Cetirizine', 3600, 'Cetirizine-qty')">Add to Cart</button>
+            </label>
+          </div>
+            <div class="medicine-item">
+                <img src="../Images/web20.webp" alt="Fexofenadine">
+                <p>
+                    <span class="medicine-name">Fexofenadine</span><br>
+                    <span class="medicine-price">LKR 1300</span>
+                </p>
+                <label for="Fexofenadine">
+                <input type="number" id="Fexofenadine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Fexofenadine', 1300, 'Fexofenadine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/web21.webp" alt="Loratadine">
+                <p>
+                    <span class="medicine-name"> Loratadine</span><br>
+                    <span class="medicine-price">LKR 1650</span>
+                </p>
+                <label for="Loratadine">
+                <input type="number" id="Loratadine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Loratadine', 1650, 'Loratadine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/web22.webp" alt="Benadryl">
+                <p>
+                    <span class="medicine-name">Benadryl</span><br>
+                    <span class="medicine-price">LKR 1600</span>
+                </p>
+                <label for="Benadryl">
+                <input type="number" id="Benadryl-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Benadryl', 1600, 'Benadryl-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/web23.webp" alt="Hydroxyzine">
+                <p>
+                    <span class="medicine-name">Hydroxyzine</span><br>
+                    <span class="medicine-price">LKR 2200</span>
+                </p>
+                <label for="Hydroxyzine">
+                <input type="number" id="Hydroxyzine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Hydroxyzine', 2200, 'Hydroxyzine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/web24.webp" alt="Azelastine">
+                <p>
+                    <span class="medicine-name">Azelastine</span><br>
+                    <span class="medicine-price">LKR 3550</span>
+                </p>
+                <label for="Azelastine">
+                <input type="number" id="Azelastine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Azelastine', 3550, 'Azelastine-qty')">Add to Cart</button>
+            </label>
+            </div>
+        </div>
+
+
+
+
+        <!--Antihypertensives Sections -->
+
+        <div class="category">
+            <h3>Antihypertensives </h3>
+            <div class="medicine-item">
+                <img src="../Images/med25.webp" alt="Amlodipine">
+                <p>
+                    <span class="medicine-name">Amlodipine</span><br>
+                    <span class="medicine-price">LKR:1400</span>
+                </p>
+                <label for="Amlodipine">
+                <input type="number" id="Amlodipine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Amlodipine', 1400, 'Amlodipine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med26.webp" alt="Diuretics">
+                <p>
+                    <span class="medicine-name">Diuretics</span><br>
+                    <span class="medicine-price">LKR 3600</span>
+                </p>
+                <label for="Diuretics">
+                <input type="number" id="Diuretics-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Diuretics', 3600, 'Diuretics-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med27.webp" alt="ACE Inhibitors">
+                <p>
+                    <span class="medicine-name"> ACE Inhibitors</span><br>
+                    <span class="medicine-price">LKR 1350</span>
+                </p>
+                <label for="ACE Inhibitors">
+                <input type="number" id="ACE Inhibitors-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('ACE Inhibitors', 1350, 'ACE Inhibitors-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med28.webp" alt="Hydralazine">
+                <p>
+                    <span class="medicine-name">Hydralazinel</span><br>
+                    <span class="medicine-price">LKR 1450</span>
+                </p>
+                <label for="Hydralazine">
+                <input type="number" id="Hydralazine-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Hydralazine', 1450, 'Hydralazine-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med29.1.webp" alt="Lisinopril">
+                <p>
+                    <span class="medicine-name">Lisinopril</span><br>
+                    <span class="medicine-price">LKR 2250</span>
+                </p>
+                <label for="Lisinopril">
+                <input type="number" id="Lisinopril-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Lisinopril', 2250, 'Lisinopril-qty')">Add to Cart</button>
+            </label>
+            </div>
+            <div class="medicine-item">
+                <img src="../Images/med30.1.webp" alt="Propranolol">
+                <p>
+                    <span class="medicine-name">Propranolol</span><br>
+                    <span class="medicine-price">LKR 3450</span>
+                </p>
+                <label for="Propranolol">
+                <input type="number" id="Propranolol-qty" value="1" min="1" aria-label="medicine">
+                <button onclick="addToCart('Propranolol', 3450, 'Propranolol-qty')">Add to Cart</button>
+            </label>
+            </div>
+        </div>
+
+
+        <!-- Cart Section -->
+        <div id="cart-section">
+            <h1>🛒Cart</h1>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <p>Total Price: LKR <span id="cart-total">0</span></p>
+            <button id="buy-btn" onclick="redirectToBill()">Buy Now</button>
+            <button id="SFav-btn">❤️Add to Favourites</button>
+            <button id="AFav-btn">❤️Apply Favourites</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>Copyright Disclaimer<br> Patient Rights & Responsibilities<br> Data Protection Notice<br>
+            <r1> For More information:</r1><br>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img2/insta.jpg" width="30" height="30"
+                    alt="instergram"> </a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../img2/youtubr.jpg" width="30" height="30"
+                    alt="youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank"><a href="https://www.facebook.com/"
+                    target="_blank "><img src="../img2/ca3bf05cfab74677e5b73b130bd30991.jpg" width="30" height="30"
+                        alt="facebook"></a>
+                <a href="https://lk.linkedin.com/" target="_blank"><img src="../img2/link.png" width="30" height="30"
+                        alt="lindin"></a>
+
+
+
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="about us.html">About us</a></li>
+                    <li><a href="./services.html">service</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./doctor.html">Doctor</a></li>
+                    <li><a href="./pharmacy.html">Pharmacy</a></li>
+                    <li><a href="./video gallery.html">Video gallery</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+    </footer>
+
+    <script src="../JS/index.js"></script>
+</body>
+
+</html>
